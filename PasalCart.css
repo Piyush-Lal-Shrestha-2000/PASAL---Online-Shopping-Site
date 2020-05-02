@@ -1,0 +1,258 @@
+/* CSS Document */
+body{
+	height: 100%;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:black;
+	background: white;
+	overflow-x: hidden;
+}
+#container{
+	margin-bottom: 0;
+	margin-right:0;
+	height: auto;
+	width: 100%;
+	box-shadow: 3px 1px 1px 1px black;
+	border: solid thin black;
+}
+#start{
+	color: white;
+	background: black;
+	display: flex;
+	position:sticky;
+	top:0;
+	z-index: 2;
+	height: 70px;
+}
+#start a{
+	text-decoration: none;
+	color: white;
+	height: 50px;
+	width: auto;
+	padding: 30px 2px 8px 2px!important;
+}
+#start a:hover{
+	text-decoration: none;
+	color: red;
+	padding: 0 2px;
+	font-size: 22px;
+	transition: .5s;
+	box-shadow:  5px -4px 4px -3px rgba(96,82,83,1);
+}
+#logo{
+	height: auto;
+	width: 250px;
+	font-size: 50px;
+	cursor: pointer;
+}
+#logo:hover{
+	color: rgba(129,212,185,0.70);	
+	box-shadow:  5px -4px 4px -3px rgba(96,82,83,1);
+	transition: .5s;
+}
+#menu{
+	height: 80px;
+	width: 80%;
+	padding: 15px 0 0 15px;
+}
+#menu a{
+	margin: 0 5px;
+}
+#user{
+	text-align:right;
+	height: 50px;
+	width: 250px;
+	margin: 10px 15px 0 15px;
+}
+#user button{
+	position: relative;
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	height: 50px;
+	width: 50px;
+	display:inline-block;
+	border-radius: 40px;	
+}
+.current{
+	margin-top: -10px!important;
+	height: 65px!important;
+	width: 65px!important;
+	border: solid 4px green;
+}
+#user button:hover{
+	cursor: pointer;
+	height: 55px;
+	width: 55px;
+	transition: .5s;
+}
+#user button span{
+	position:absolute;
+	top: 0px;
+	right: 3px;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	border: solid thin red;
+	background:red;
+	visibility:hidden;
+}
+#settings{
+	background:url(https://img.icons8.com/ultraviolet/40/000000/settings.png);	
+}
+#cart{
+	background:url(https://img.icons8.com/bubbles/50/000000/add-shopping-cart.png);
+}
+#noti{
+	background:url(https://img.icons8.com/flat_round/48/000000/bell.png);
+}
+#account{
+	background:url(https://img.icons8.com/color/48/000000/morty-smith.png);
+}
+#mid{
+	height: auto;
+	width: 100%;
+}
+#mid1{
+	background:url(Images/back3.jpg);
+	height: 350px;
+	width: 100%;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	webkit-filter: blur(1px); /* Chrome, Safari, Opera */
+    filter: blur(1px);
+}
+#mid1:hover{
+	webkit-filter: blur(0px); /* Chrome, Safari, Opera */
+    filter: blur(0px);	
+}
+#contents{
+	height: auto;
+	width: 100%;	
+	margin: 75px 0px;
+}
+#bottom{
+	background: rgba(0,0,0,0.8);
+	color: white;
+	height: auto;
+	width: 100%;
+	font-size: 15px;
+}
+#bottom:hover{
+	background: rgba(0,0,0,1);
+}
+#bottom a{
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+#bottom a:hover{
+	color: red;
+	font-size: 18px;
+	transition: .5s;
+}
+#tt{
+	text-align:center;
+	height: 100px;
+	width: auto;
+}
+#tt a{
+	height: 50px;
+	padding: 20px 0 0 0;
+	box-shadow: 0px 1px 1px 1px rgba(96,82,83,0.6);
+}
+#b2{
+	display: flex;
+	height: 350px;	
+}
+#b2 div{
+	margin: 30px 70px;	
+	width: 500px;
+}
+#b2 h4{
+	font-size: 18px;
+}
+#b3{
+	height: 50px;
+	box-shadow: 0px -5px 5px -3px rgba(96,82,83,1);
+}
+#b3 p{
+	text-align:center;	
+	font-size: 15px;
+	padding: 10px 0 0 0;
+}
+table{
+	border-collapse:collapse;
+	font-size: 0.9em;
+	min-width: 400px;
+	border-left: 1px solid #dddddd;
+	border-right: 1px solid #dddddd;
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+th{
+	background-color: #009879;
+	color: #FFFFFF;
+	text-align:left;
+	padding-left: 10px;
+}
+tr{
+	border-bottom: 1px solid #dddddd;
+}
+tr:nth-of-type(even){
+	background: #f3f3f3;
+}
+tr:last-of-type, tr:last-of-type input{
+	border-bottom: 2px solid #009879;	
+	font-weight: bold;
+	color: #FFFFFF;
+	background:#009879;
+}
+td{
+	padding: 12px 15px;
+	border-right: 1px solid #dddddd;
+}
+th form {	
+	display: inline;
+	align-items:center;
+}
+th form input{
+	line-height: 20px;
+	height: 25px;
+}
+table tr td input{
+	border: none;
+	background: inherit;
+}
+.qnt{
+	width: 50px;
+	background: #D8D3D3;
+}
+tr:first-of-type{
+	margin-bottom: 2px;
+	color: green;
+	font-weight:600; 
+}
+tr:first-of-type input,#empcart{
+	background: #DDD4D4;
+	border: solid thin #A8A7A7;
+	cursor:pointer;
+}
+tr:first-of-type input:hover,#empcart:hover{
+	box-shadow: 0 0.5px 0.5px 0 black;
+	opacity:.8;
+}
+#msg{
+	color: red;
+	background: yellow;
+	align:center;
+}
+mark{
+	text-decoration:line-through;
+	height: 10px;
+}

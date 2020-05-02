@@ -1,0 +1,397 @@
+body{
+	height: auto;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:black;
+	background: white;
+	overflow-x: hidden;
+}
+#container{
+	margin-bottom: 0;
+	margin-right:0;
+	height: auto;
+	width: 100%;
+	box-shadow: 3px 1px 1px 1px black;
+	border: solid thin black;
+}
+#start{
+	color: white;
+	background: black;
+	display: flex;
+	position:sticky;
+	top:0;
+	z-index: 2;
+	height: 70px;
+}
+#start a{
+	text-decoration: none;
+	color: white;
+	height: 50px;
+	width: auto;
+	//border: solid thin red;
+	padding: 30px 2px 8px 2px!important;
+}
+#start a:hover{
+	text-decoration: none;
+	color: red;
+	padding: 0 2px;
+	font-size: 22px;transition: .5s;
+	box-shadow:  5px -4px 4px -3px rgba(96,82,83,1);
+}
+.current{
+	color: white!important;
+	font-size: 22px!important;
+	padding: 0 2px!important;
+	height: 50px;
+	width: 50px;
+	background: rgba(80,150,50,.9);
+	margin-top: -10px!important;
+	box-shadow: 1px 1px green;
+}
+#logo{
+	height: auto;
+	width: 250px;
+	font-size: 50px;
+	cursor: pointer;
+}
+#logo:hover{
+	color: rgba(129,212,185,0.70);	
+	box-shadow:  5px -4px 4px -3px rgba(96,82,83,1);
+	transition: .5s;
+}
+#menu{
+	height: 80px;
+	width: 80%;
+}
+#menu a{
+	margin: 0 5px;
+}
+#search{
+	margin-top: 5px;
+	padding: 2px;
+	height: 30px;
+}
+#searchb{
+	padding-left: 2px;
+	width: 250px;
+	border-radius: 5px;
+}
+#ssearch{
+	margin-top: -30px!important;
+	height: 25px;
+	width: 35px;
+	border-radius:20px;
+	background-image:url(Images/search.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:contain;
+	cursor: pointer;
+}
+#user{
+	text-align:right;
+	height: 50px;
+	width: 250px;
+	margin: 10px 15px 0 15px;
+}
+#user button{
+	position: relative;
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	height: 50px;
+	width: 50px;
+	display:inline-block;
+	border-radius: 40px;	
+}
+#user button:hover{
+	cursor: pointer;
+	height: 55px;
+	width: 55px;
+}
+#user button span{
+	position:absolute;
+	top: 0px;
+	right: 3px;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	border: solid thin red;
+	background:red;
+	visibility:hidden;
+}
+#user button:hover span{
+	//visibility: visible;
+}
+#settings{
+	background:url(https://img.icons8.com/ultraviolet/40/000000/settings.png);	
+}
+#cart{
+	background:url(https://img.icons8.com/bubbles/50/000000/add-shopping-cart.png);
+}
+#noti{
+	background:url(https://img.icons8.com/flat_round/48/000000/bell.png);
+}
+#account{
+	background:url(https://img.icons8.com/color/48/000000/morty-smith.png);
+}
+#mid{
+	height: auto;
+	width: 100%;
+}
+#mid1{
+	background:url(Images/back3.jpg);
+	height: 350px;
+	width: 100%;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	webkit-filter: blur(1px); /* Chrome, Safari, Opera */
+    filter: blur(1px);
+}
+#mid1:hover{
+	webkit-filter: blur(0px); /* Chrome, Safari, Opera */
+    filter: blur(0px);	
+}
+#imgsli{
+	display:flex;
+	border-collapse: separate;
+	border: solid thin black;
+	margin: 1px;
+	padding: 1px 5px;
+}
+#imgsli img{
+	margin: 0px 1px;
+}
+#contents{
+	height: auto;
+	width: 100%;	
+	margin: 2px 0px;
+}
+#contents div{
+	border: solid thin black;
+	margin: 2px;
+	height: auto;
+	width: auto;
+	padding: 10px;
+	background: rgba(245,245,245,.5);
+	overflow: hidden;
+}
+#contents div:hover{
+	background: rgba(255,255,255,0.2);
+}
+#contents div h3{
+	background: rgb(0,0,0,0.7);
+	margin: -10px 0 20px -10px;
+	width: 400px;
+	height: auto;
+	border: solid thin blue;
+	color: white;	
+	border-bottom-right-radius: 5px;
+}
+#contents div h3 a{
+	display: none;
+	text-decoration:none;
+	font-weight:500;
+	font-size: 18px;
+	color: white;		
+}
+#contents div #heading:hover{
+	background: rgb(255,255,255,1)!important;	
+}
+#contents div h3:hover{
+	color: red;
+	transition: .5s;	
+	background: rgb(0,0,0,1)!important;
+	padding-left: 100px;
+}
+#contents div h3:hover a{
+	display: inline-block;
+	color: red;
+	transition: .5s;
+}
+#contents div div{
+	display: flex;
+	border: solid thin black;
+	margin: 0 5px 5px 5px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	padding: 5px;	
+	height: 500px;
+	width: auto;
+}
+#contents div div:hover{
+	//background: linear-gradient(to bottom,black,white), rgba(245,237,237,0.68);
+	//background: linear-gradient(-90deg, #87CEFA, #00FFFF, #00CED1);
+	//background:url(Images/bggrd.png);
+	background-position:center;
+	background-repeat:space;
+	background-size:cover;
+}
+#contents div #heading{
+	height: auto;
+	border: none;
+	margin-bottom: 0;
+	padding: 0;	
+	overflow: hidden;
+}
+#contents div #heading span{
+	display: block;
+	height: auto;
+	width: 95%;
+}
+#contents div #heading span h4{
+	border: solid thin black;
+	border-left:solid 10px gold;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 0;
+	box-shadow: 1px 1px 1px 1px #000;
+	padding-left: 10px;
+	margin: 0px;
+	width: 30%;
+	color: white;
+	background:rgba(0,0,0,.7);	
+}
+#contents div #heading span h4:hover{
+	color: red;
+	transition: .8s;
+	background:rgba(0,0,0,1);	
+}
+#contents div #heading a{
+	width: 5%;
+	border-right:solid 10px gold;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 0;box-shadow: 1px 1px 1px 1px #000;	
+	font-size: 18px;
+	text-align:center;
+	text-decoration:none;
+	color: white;
+	background:rgba(0,0,0,.73);
+}
+#contents div #heading a:hover{
+	color: red;
+	transition: .8s;
+	background:rgba(0,0,0,1);	
+}
+#contents div div div{
+	height: 380px;
+	width: 230px;
+	margin: 40px 20px 0 20px;
+	display: inline-block;
+	text-align:center;
+	opacity: .73;
+	border: none;
+}
+#contents div div div:hover{
+	box-shadow: 1px 1px 1px 1px #000;	
+	opacity: 1;
+	height: 480px;
+	width: 310px;
+	margin: 0 20px;
+	transition: .3s;
+	background: white;
+}
+#contents div div div:hover div{
+	visibility:visible;
+	border: none;	
+	height: 50px;
+	width: 200px;
+}
+#contents div div div p{
+	margin-top: 10px;
+	color: green;
+}
+#contents div div div div{
+	visibility: hidden;
+	margin: -20px 80px; 
+	height: 50px;
+	width: 200px;
+	text-align:center;
+	border: none;
+}
+#contents div div div div p{
+	visibility: hidden;
+}
+#contents div div div div input{
+	
+}
+#contents div div div div:hover p{
+	visibility: visible;
+	margin: -10px;
+	width: 100px;
+	font-size: 13px;		
+}
+#contents div div div div button{
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	margin: 0 0 0 0px;
+	border-radius: 20px;
+	background:url(Images/cart.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+#bottom{
+	background: rgba(0,0,0,0.8);
+	color: white;
+	height: auto;
+	width: 100%;
+	font-size: 15px;
+}
+#bottom:hover{
+	background: rgba(0,0,0,1);
+}
+#bottom a{
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+#bottom a:hover{
+	color: red;
+	font-size: 18px;
+	transition: .5s;
+}
+#tt{
+	text-align:center;
+	height: 100px;
+	width: auto;
+}
+#tt a{
+	height: 50px;
+	padding: 20px 0 0 0;
+	box-shadow: 0px 1px 1px 1px rgba(96,82,83,0.6);
+}
+#b2{
+	display: flex;
+	height: 350px;	
+}
+#b2 div{
+	margin: 30px 70px;	
+	width: 500px;
+}
+#b2 h4{
+	font-size: 18px;
+}
+#b3{
+	height: 50px;
+	box-shadow: 0px -5px 5px -3px rgba(96,82,83,1);
+}
+#b3 p{
+	text-align:center;	
+	font-size: 15px;
+	padding: 10px 0 0 0;
+}
+#fm{
+	display:none;
+}
+dash{
+	text-decoration:line-through;
+	color: red;
+}

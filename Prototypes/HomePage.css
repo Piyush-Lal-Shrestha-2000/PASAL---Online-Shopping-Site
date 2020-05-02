@@ -1,0 +1,146 @@
+/* CSS Document */
+html, body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size:14px;
+}
+	#container{
+		//border: solid thick black;
+		height:100%;
+		width: 100%;
+		opacity:1;
+	}
+		#top{
+			height: 10%;
+			width: 100%;
+			border: solid thin black;
+			background: #000;
+			opacity:.7;
+			box-shadow: 3px 3px 3px 3px #000;
+			border-bottom-left-radius: 30px;
+			margin: 0 0 0.8% 0;
+		}
+			#tlogo{
+				height: 100%;
+				width: 10%;
+				//border: solid thick red;
+				border-bottom-left-radius: 30px;
+				opacity: 1;
+			}
+			#tlogo a img{
+				border-bottom-left-radius: 30px;
+				margin: 0 0 0 2%;
+				opacity: .5;
+			}
+			#tlogo a img:hover{
+				opacity: 1;
+				transition: .5s;
+				box-shadow: 1px 1px 1px 1px red;
+			}
+		#contents{
+			height: 73%;
+			width: 99%;
+			margin: 0 0 0 1.5%;
+			border: solid thin black;
+			border-top-left-radius: 20px;
+			box-shadow: 3px 3px 3px 3px #000;
+			background: url(Images/back.jpg);
+			background-position:center;
+			background-size:cover;
+		}
+			slider{
+			z-index: 1;
+			margin: 1% 10%;
+			height: 10%;
+			width: 80%;
+			display: block;
+			background-color: #1f1f1f;
+			border-radius: 40px;
+			overflow: hidden;
+			position: absolute;
+			//position:fixed;
+			box-shadow:3px 3px 3px 3px #000000;
+			}
+			slider:hover{
+				height: 15%;
+				width: 90%;	
+				margin: 1% 4%;	
+				transition: 1s;
+			}
+			slider > *{
+				position: absolute;
+				display: block;
+				width: 100%;
+				height: 100%;
+				background-color: #1f1f1f;
+				overflow: hidden;
+				animation: slide 4s infinite;
+			}
+			slide:nth-child(1){
+				left: 0%;
+				animation-delay: 1s;
+				background-image:url(Images/NewItems.jpg);
+				//background-size: cover;
+				//background-repeat: no-repeat;
+				background-position: center;
+			}
+			slide:nth-child(2){
+				animation-delay: 2s;
+				background-image:url(Images/Offers.jpg);
+				//background-size: cover;
+				//background-repeat: no-repeat;
+				background-position: center;
+			}
+			slide:nth-child(3){
+				animation-delay: 3s;
+				background-image:url(Images/Sale.png);
+				background-size:contain;
+				//background-size: cover;
+				//background-repeat: no-repeat;
+				background-position: center;
+			}
+			slide:nth-child(4){
+				animation-delay: 4s;
+				background-image:url(Images/GreatDeals.png);
+				background-size:contain;
+				//background-size: cover;
+				//background-repeat: no-repeat;
+				background-position: center;
+			}
+			@keyframes slide{
+				0%{left: 100%; width: 100%;}	
+				5%{left: 0%;}
+				25%{left: 0%;}
+				30%{left: - 100%;width: 100%;}
+				30.0001%{left: -100%;width: 0%;}
+				100%{left: 100%;width: 0%;}
+			}
+		#end{
+			height: 15%;
+			width: 100%;
+			background: #000;
+			border: solid thin black;
+			border-top-left-radius: 30px;
+			color: red;
+			margin: 0.6% 0 0 0;
+			padding: 10px;
+			font-size: 10px;
+		}	
+			#end abbr button{
+				border-radius: 40px;
+				height: 40px;
+				width: 40px;
+				background-image:url(Images/fb.png);
+				background-size:cover;
+				background-position:center;
+				background-repeat:no-repeat;
+				cursor: pointer;
+			}
+			#end abbr button:hover{
+				box-shadow: 1px 1px 1px 1px red;
+				transition: .3s;
+			}
